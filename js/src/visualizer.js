@@ -315,11 +315,6 @@ angular.module('neo-visualizer', ['ng', 'ngResource', 'nvd3'])
             <div>
             <div ng-show="!error" class="panel panel-default">
                 <div class="panel-heading">
-                    <p>
-                    <button type="button" class="btn btn-link" ng-click="showAnnotations = !showAnnotations"><span class="glyphicon glyphicon-info-sign"></span></button>
-                    {{label}}
-                    <a type="button" class="btn" href="{{source}}"><span class="glyphicon glyphicon-download-alt"></span></a>
-                    </p>
                     <div ng-show="showAnnotations">
                         <small>
                         <table class="table table-striped table-condensed">
