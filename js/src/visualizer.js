@@ -340,7 +340,7 @@ angular.module('neo-visualizer', ['ng', 'ngResource', 'nvd3'])
                     <!--<p>{{segment.name}}</p>
                     <p>Contains {{segment.analogsignals.length}} analog signals</p>-->
                     <select class="form-control" ng-show="segment" ng-change="switchAnalogSignal()" ng-model="currentAnalogSignalId">
-                        <option value="">--- Please select signal ---</option> <!-- not selected / blank option -->
+                        <option value="">--- Select detailed/simplified trace ---</option> <!-- not selected / blank option -->
                         <option ng-repeat="signal in segment.analogsignals" value="{{$index}}">
                             Signal #{{$index}} <span ng-show="signal.name">({{signal.name}})</span>
                         </option>
